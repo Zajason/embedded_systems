@@ -6,7 +6,9 @@ NOT our measurements - they only go into report_reference.pdf, printed in blue.
 Source: github.com/jimmichalako/embedded-systems-ntua, lab-1/report.pdf (2024-25),
 same exercise, same skeleton (N = M = 10), SK-S7G2 at 240 MHz.
 Their optimized code differs from ours, so only the original (v0) and the
-B / Bx x By exploration are comparable; v1-v4 stay empty.
+B / Bx x By exploration are comparable. For our v1-v4 (and our DSE) the values are
+ESTIMATES from tools/m4estimate (Cortex-M4 emulation, fitted on their measurements),
+printed in purple with "~".
 
 Writes report/generated/reference_values.tex and report/generated/reference_q2_q5.png.
 """
@@ -46,6 +48,17 @@ def cyc(ms):
     return f"{round(ms / 1000 * CLOCK):,}".replace(",", "\\,")
 
 
+def estimates():
+    """Our v1-v4 / DSE estimates (min, median, max of the 3 fitted models), in us."""
+    import json
+    p = Path(__file__).resolve().parent / "m4estimate" / "pred.json"
+    return {k.replace("phods_", ""): v for k, v in json.load(open(p))["ours_us"].items()}
+
+
+def est(x):
+    return f"\\textcolor{{refpurple}}{{$\\approx$\\,{x:.0f}}}"
+
+
 def main():
     gen = Path(__file__).resolve().parents[1] / "report" / "generated"
     gen.mkdir(parents=True, exist_ok=True)
@@ -61,10 +74,26 @@ def main():
     d["best-b"], d["best-b-us"] = str(sq[0]), us(DSE[sq][1])
     d["best-bx"], d["best-by"], d["best-bxby-us"] = str(best[0]), str(best[1]), us(DSE[best][1])
 
+    E = estimates()
+    raw = {}
+    for v, name in (("v1", "v1_hoist"), ("v2", "v2_bounds"), ("v3", "v3_share"), ("v4", "v4_copy")):
+        lo, mid, hi = E[name]
+        raw[f"{v}-avg-us"] = est(mid)
+        raw[f"{v}-min-us"] = raw[f"{v}-max-us"] = "\\textcolor{refpurple}{\\small εκτ.}"
+        raw[f"{v}-speedup"] = "\\textcolor{refpurple}{$\\approx$\\," + f"{ORIGINAL[1] * 1000 / mid:.1f}".replace(".", ",") + "}"
+        raw[f"est-{v}-range"] = f"{lo:.0f}--{hi:.0f}"
+    for (bx, by) in DSE:
+        lo, mid, hi = E[f"dse_{bx}_{by}"]
+        raw[f"est-d{bx}-{by}"] = f"{mid:.0f}"
+    eb = min(DSE, key=lambda b: E[f"dse_{b[0]}_{b[1]}"][1])
+    raw["est-best-bxby"] = f"{eb[0]}\\times{eb[1]}"
+
     with open(gen / "reference_values.tex", "w") as f:
         f.write("% REFERENCE values from a past student's report (tools/make_reference.py) - NOT our measurements\n")
         for k, v in sorted(d.items()):
             f.write(f"\\expandafter\\def\\csname val@{k}\\endcsname{{\\textcolor{{refblue}}{{{v}}}}}\n")
+        for k, v in sorted(raw.items()):
+            f.write(f"\\expandafter\\def\\csname val@{k}\\endcsname{{{v}}}\n")
     print("wrote", gen / "reference_values.tex")
 
     import matplotlib

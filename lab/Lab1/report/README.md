@@ -28,7 +28,8 @@ tectonic report.tex
 with a **past student's** board timings (jimmichalako/embedded-systems-ntua, 2024–25),
 printed in blue, plus a "ΟΧΙ ΓΙΑ ΠΑΡΑΔΟΣΗ" banner. Print it and take it to the lab to
 check whether your own numbers make sense. Only v0 and the B / Bx×By tables are
-comparable (their optimized code is different), so v1–v4 stay empty.
+comparable (their optimized code is different). The v1–v4 cells show purple `≈` *estimates*
+for our code from `tools/m4estimate` (see its README).
 
 ```bash
 python3 tools/make_reference.py      # from lab/Lab1, writes generated/reference_*

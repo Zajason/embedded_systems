@@ -163,7 +163,7 @@ the empty cells, so you can write your numbers beside them:
 |---|---|---|
 | `g_core_clock_hz` | **240000000** | all reports |
 | `phods_v0_original` (Q2) `avg_us` | **≈ 1820–1850 µs** (≈ 437k–444k cycles) | 1.821 ms and 1.850 ms in two reports (an older version: 1.648 ms) |
-| best optimized B = 5 version (Q3) | **≈ 700–800 µs**, i.e. roughly 2.5× faster than v0 | 0.738 ms and 0.729 ms (with *their* optimizations; ours differ, so treat this as a ballpark) |
+| our v1 / v2 / v3 / v4 (Q3) | **≈ 710 / 540 / 450 / 470 µs** (±15 %) | *estimates* for our code from `tools/m4estimate` (Cortex-M4 emulation fitted on a past student's board times); their own best optimized code: 0.738 and 0.729 ms |
 | square B (Q4): B = 1 / 2 / 5 / 10 | B = 1 slowest, **B = 10 fastest**, steadily decreasing | 1.24 / 0.85 / 0.74 / 0.68 ms and 1.42 / 0.96 / 0.75 / 0.70 ms |
 | rectangular (Q5) | wide blocks (**large By**, e.g. By = 10) fastest | both reports |
 | `min_us` vs `max_us` of one row | almost equal (difference of ns to a few µs) | all reports |
