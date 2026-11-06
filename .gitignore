@@ -1,1 +1,5 @@
 .DS_Store
+
+# kept local only (copyrighted course material)
+lectures/
+exams/
