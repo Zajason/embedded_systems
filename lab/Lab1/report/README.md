@@ -21,3 +21,18 @@ tectonic report.tex
   disappear.
 - Fonts: Times New Roman / Arial / Menlo (present on macOS). On another OS change the
   `\setmainfont` etc. lines.
+
+## Lab copy with reference values (`report_reference.pdf`)
+
+`report_reference.tex` builds the same report, but fills the Part 1 tables and plot
+with a **past student's** board timings (jimmichalako/embedded-systems-ntua, 2024–25),
+printed in blue, plus a "ΟΧΙ ΓΙΑ ΠΑΡΑΔΟΣΗ" banner. Print it and take it to the lab to
+check whether your own numbers make sense. Only v0 and the B / Bx×By tables are
+comparable (their optimized code is different), so v1–v4 stay empty.
+
+```bash
+python3 tools/make_reference.py      # from lab/Lab1, writes generated/reference_*
+cd report && tectonic report_reference.tex
+```
+
+Never hand this one in: the real report is `report.pdf`.

@@ -74,7 +74,19 @@
 % ---- μετρήσεις πλακέτας ---------------------------------------------------
 \newif\ifboardresults
 \boardresultsfalse
-\InputIfFileExists{generated/part1_values.tex}{}{}
+% report_reference.tex ορίζει \USEREFERENCE: τότε φορτώνονται (με μπλε) τιμές αναφοράς
+% από παλαιότερη αναφορά, μόνο για σύγκριση στο εργαστήριο.
+\definecolor{refblue}{RGB}{0,90,200}
+\ifdefined\USEREFERENCE
+  \input{generated/reference_values.tex}
+  \newcommand{\partonefig}{generated/reference_q2_q5.png}
+\else
+  \InputIfFileExists{generated/part1_values.tex}{}{}
+  \newcommand{\partonefig}{../results/q2_q5_all.png}
+\fi
+\newcommand{\refnote}[1]{\ifdefined\USEREFERENCE
+  \par\noindent\fcolorbox{refblue}{refblue!6}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\small
+  \textcolor{refblue}{#1}}}\par\fi}
 \newcommand{\pend}{\textcolor{pendframe}{\textbf{--}}}
 \newcommand{\val}[1]{\ifcsname val@#1\endcsname\csname val@#1\endcsname\else\pend\fi}
 % σημειώσεις για τον σχολιασμό που γράφεται μετά τις μετρήσεις·
@@ -127,6 +139,12 @@
 
 \vspace{0.4cm}
 \noindent\rule{\linewidth}{0.4pt}
+
+\refnote{\textbf{ΑΝΤΙΓΡΑΦΟ ΕΡΓΑΣΤΗΡΙΟΥ -- ΟΧΙ ΓΙΑ ΠΑΡΑΔΟΣΗ.} Οι \textbf{μπλε} τιμές του
+Ζητούμενου 1 είναι \textbf{τιμές αναφοράς} από παλαιότερη αναφορά για την ίδια άσκηση
+(\val{ref-source}), στην ίδια πλακέτα στα 240 MHz. \textbf{Δεν είναι δικές μας μετρήσεις.} Είναι
+συγκρίσιμες μόνο για τον αρχικό κώδικα (v0) και τα $B$, $B_x \times B_y$· ο δικός τους
+βελτιστοποιημένος κώδικας είναι διαφορετικός, γι' αυτό τα v1--v4 μένουν κενά.}
 
 % ============================ ΖΗΤΟΥΜΕΝΟ 1 ============================
 \section*{Ζητούμενο 1: Ο αλγόριθμος PHODS στην πλακέτα Renesas S7G2}
@@ -271,6 +289,10 @@ v4 & + block σε buffer στη RAM       & \val{v4-min-us} & \val{v4-max-us} & 
 \end{tabular}
 \end{table}
 
+\refnote{Αναφορά σύγκρισης: ο τελικός βελτιστοποιημένος κώδικας της παλαιότερης αναφοράς
+($B = 5$, διαφορετικοί μετασχηματισμοί) έτρεχε σε \val{ref-bestopt-us}~$\mu$s, δηλαδή περίπου
+2,5× ταχύτερα από τον αρχικό. Το v3/v4 μας αναμένεται στην ίδια τάξη μεγέθους.}
+
 \pendnote{σχολιασμός της συνεισφοράς κάθε σταδίου και σύγκριση με το ερώτημα 2. Ειδικά για
 το v4 (υπόδειξη της εκφώνησης): αν \emph{δεν} βελτιώνει, εξήγηση ότι τα \texttt{const}
 δεδομένα βρίσκονται στη flash πίσω από την FCACHE, οπότε οι επαναλαμβανόμενες αναγνώσεις
@@ -351,7 +373,7 @@ blocks το μεγαλύτερο $B_y$ είναι ταχύτερο).}
 
 \begin{figure}[H]
 \centering
-\figorpending{../results/q2_q5_all.png}{0.95\linewidth}{ερωτήματα 2--5}
+\figorpending{\partonefig}{0.95\linewidth}{ερωτήματα 2--5}
 \caption{Ελάχιστος, μέσος και μέγιστος χρόνος εκτέλεσης για όλες τις εκδόσεις
 (ερωτήματα 2--5).}
 \label{fig:part1}

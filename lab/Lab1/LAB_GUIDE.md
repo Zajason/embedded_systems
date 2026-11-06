@@ -155,7 +155,9 @@ show which version is wrong.
 ### 7b-check. Are the numbers plausible?
 
 Before you leave, compare with what past NTUA students measured on the same board,
-exercise and skeleton (public GitHub repos, 2023–2025):
+exercise and skeleton (public GitHub repos, 2023–2025). The printed
+`report/report_reference.pdf` has one past report's full tables (in blue) next to
+the empty cells, so you can write your numbers beside them:
 
 | what | expected | from |
 |---|---|---|
