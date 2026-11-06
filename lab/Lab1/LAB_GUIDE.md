@@ -230,8 +230,15 @@ python3 tools/analyze.py results/gdb_dump.txt
 ```
 
 This prints a table and writes `results/results.csv` plus the plots `q2_q3.png`,
-`q4.png`, `q5.png` and `q2_q5_all.png`. Then fill the numbers into `ANSWERS.md`
-(or ask Claude to do it from `results.csv`).
+`q4.png`, `q5.png` and `q2_q5_all.png`. It also writes
+`report/generated/part1_values.tex`, so rebuilding the report fills every Part 1 table
+and plot automatically:
+```bash
+cd report && tectonic report.tex
+```
+What is left after that is the written discussion of the board results (the orange
+"Εκκρεμεί" boxes in the report). Ask Claude to write it from `results/results.csv`,
+then set `\discussiondonetrue` in `report.tex`.
 
 ---
 

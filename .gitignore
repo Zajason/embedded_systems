@@ -3,3 +3,8 @@
 # kept local only (copyrighted course material)
 lectures/
 exams/
+
+# LaTeX build files
+lab/*/report/*.aux
+lab/*/report/*.log
+lab/*/report/*.out
