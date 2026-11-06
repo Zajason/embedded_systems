@@ -1,0 +1,707 @@
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:31:55
+gem5 executing on 615f45601d62, pid 9757
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=8kB --l1d_size=64kB --l2_size=512kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42001003000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:32:02
+gem5 executing on 615f45601d62, pid 9771
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=4kB --l1d_size=4kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 59343511000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:32:10
+gem5 executing on 615f45601d62, pid 9785
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf32.exe --l1i_size=16kB --l1d_size=32kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42146066000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:32:16
+gem5 executing on 615f45601d62, pid 9799
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf4.exe --l1i_size=32kB --l1d_size=4kB --l2_size=256kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 59500054000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:32:24
+gem5 executing on 615f45601d62, pid 9813
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf4.exe --l1i_size=8kB --l1d_size=16kB --l2_size=256kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42583907000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:32:31
+gem5 executing on 615f45601d62, pid 9827
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf4.exe --l1i_size=16kB --l1d_size=4kB --l2_size=256kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 59502155000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:32:39
+gem5 executing on 615f45601d62, pid 9841
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=8kB --l1d_size=32kB --l2_size=256kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42014116000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:32:45
+gem5 executing on 615f45601d62, pid 9855
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf4.exe --l1i_size=16kB --l1d_size=2kB --l2_size=512kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 59638163000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:32:53
+gem5 executing on 615f45601d62, pid 9869
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=2kB --l1d_size=64kB --l2_size=1024kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 46977864000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:33:00
+gem5 executing on 615f45601d62, pid 9883
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=8kB --l1d_size=2kB --l2_size=512kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 59496607000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:33:08
+gem5 executing on 615f45601d62, pid 9897
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf4.exe --l1i_size=2kB --l1d_size=4kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 59583529000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:33:16
+gem5 executing on 615f45601d62, pid 9911
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=8kB --l1d_size=64kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42270641000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:33:23
+gem5 executing on 615f45601d62, pid 9925
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=32kB --l1d_size=64kB --l2_size=256kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 41929862000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:33:29
+gem5 executing on 615f45601d62, pid 9939
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=32kB --l1d_size=16kB --l2_size=256kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42370509000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:33:36
+gem5 executing on 615f45601d62, pid 9953
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf32.exe --l1i_size=16kB --l1d_size=32kB --l2_size=1024kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42124369000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:33:43
+gem5 executing on 615f45601d62, pid 9967
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf4.exe --l1i_size=8kB --l1d_size=2kB --l2_size=256kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 59661793000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:33:51
+gem5 executing on 615f45601d62, pid 9981
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=8kB --l1d_size=32kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42013781000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:33:57
+gem5 executing on 615f45601d62, pid 9995
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=32kB --l1d_size=64kB --l2_size=512kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 41928286000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:34:04
+gem5 executing on 615f45601d62, pid 10009
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=64kB --l1d_size=64kB --l2_size=256kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 41925024000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:34:11
+gem5 executing on 615f45601d62, pid 10023
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=16kB --l1d_size=64kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42286722000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:34:17
+gem5 executing on 615f45601d62, pid 10037
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=2kB --l1d_size=4kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 64288644000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:34:25
+gem5 executing on 615f45601d62, pid 10051
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=8kB --l1d_size=64kB --l2_size=512kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 41946701000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:34:32
+gem5 executing on 615f45601d62, pid 10065
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf4.exe --l1i_size=16kB --l1d_size=16kB --l2_size=1024kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42557474000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:34:39
+gem5 executing on 615f45601d62, pid 10079
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=32kB --l1d_size=64kB --l2_size=512kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 41984366000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:34:45
+gem5 executing on 615f45601d62, pid 10093
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=64kB --l1d_size=64kB --l2_size=512kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 41927383000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:34:52
+gem5 executing on 615f45601d62, pid 10107
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=2kB --l1d_size=2kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 59581198000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:35:00
+gem5 executing on 615f45601d62, pid 10121
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=8kB --l1d_size=8kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 59296471000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:35:08
+gem5 executing on 615f45601d62, pid 10135
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=8kB --l1d_size=32kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 41969226000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:35:14
+gem5 executing on 615f45601d62, pid 10149
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf8.exe --l1i_size=2kB --l1d_size=64kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 42354944000 because exiting with last active thread context
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 22 2023 13:55:57
+gem5 started Nov  6 2026 14:35:21
+gem5 executing on 615f45601d62, pid 10163
+command line: /gem5/build/X86/gem5.opt /gem5/configs/learning_gem5/part1/two_level.py /gem5/tables_UF/tables_uf16.exe --l1i_size=2kB --l1d_size=2kB --l2_size=128kB
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Exiting @ tick 64441717000 because exiting with last active thread context
+==========================================================
+n_gen  |  n_eval  | n_nds  |      eps      |   indicator  
+==========================================================
+     1 |       10 |      4 |             - |             -
+     2 |       15 |      5 |  0.0091743119 |         ideal
+     3 |       20 |      5 |  0.1280000000 |         nadir
+     4 |       25 |      5 |  0.000000E+00 |             f
+     5 |       30 |      6 |  0.0079365079 |         ideal
+
+Pareto Optimal Configurations
+
+1) L1I (KB) = 4 L1D (KB) = 4 L2 (KB) = 128 UF = 16 config. results in Execution Time (CC) = 59343511 and Total Memory (KB) = 136
+2) L1I (KB) = 32 L1D (KB) = 64 L2 (KB) = 256 UF = 16 config. results in Execution Time (CC) = 41929862 and Total Memory (KB) = 352
+3) L1I (KB) = 64 L1D (KB) = 64 L2 (KB) = 256 UF = 16 config. results in Execution Time (CC) = 41925024 and Total Memory (KB) = 384
+4) L1I (KB) = 2 L1D (KB) = 2 L2 (KB) = 128 UF = 8 config. results in Execution Time (CC) = 59581198 and Total Memory (KB) = 132
+5) L1I (KB) = 8 L1D (KB) = 8 L2 (KB) = 128 UF = 16 config. results in Execution Time (CC) = 59296471 and Total Memory (KB) = 144
+6) L1I (KB) = 8 L1D (KB) = 32 L2 (KB) = 128 UF = 16 config. results in Execution Time (CC) = 41969226 and Total Memory (KB) = 168

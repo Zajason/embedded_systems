@@ -1,4 +1,13 @@
-# Embedded Systems Lab 1: PHODS on the Renesas S7G2
+# Embedded Systems Lab 1
+
+| doc | what |
+|---|---|
+| [LAB_GUIDE.md](LAB_GUIDE.md) | step-by-step for the lab PC (Part 1 on the board) and bringing the results home |
+| [ANSWERS.md](ANSWERS.md) | report draft: Part 1 (Q1 filled, Q2–Q5 after the lab) and Part 2 (all done, with results) |
+| [EXPLANATIONS.md](EXPLANATIONS.md) | detailed explanation of all the code, both parts |
+| [part2/README.md](part2/README.md) | how to (re-)run the gem5 part |
+
+## Part 1: PHODS on the Renesas S7G2
 
 The code for **Ζητούμενο 1** (Q2–Q5) is ready. You flash the board once and one debug
 session times every configuration. Each one runs 10 times and you get min/max/avg.
@@ -28,8 +37,8 @@ results/             put your dump/CSV/plots here
    the project's `src/` (drag and drop in the Project Explorer and pick *Copy files*).
 4. Set **-O0**: right click the project → Properties → C/C++ Build → Settings →
    Optimization → *Other optimization flags* = `-O0` (or set Optimization level to None).
-   Doing it on the whole project rather than only on hal_entry.c is best, because all the
-   PHODS code is in headers that hal_entry.c includes.
+   Setting it only on hal_entry.c (as the starter guide does) is also enough, because all
+   the PHODS code is in headers that hal_entry.c includes.
 5. **Build**, then **Debug As → Renesas GDB Hardware Debugging**, then Resume (F8).
    It halts by itself at `__BKPT(0)` near the end of `hal_entry()`. Without a debugger
    attached that instruction would fault, which is fine here.
