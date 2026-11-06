@@ -90,7 +90,10 @@ Q1 (RAM/Flash sizes, caches) comes from the S7G2 datasheet. The clock frequency 
   2000 random frame pairs (all pass).
 - Each measurement is only the call of the PHODS function (`DWT->CYCCNT` read right
   before and after it). Time = cycles / `SystemCoreClock`.
-- The first of the 10 runs is often slower (cold caches/prefetch). That shows up as
-  max > min and is worth a sentence in the report.
+- Expect the 10 runs to be almost identical. Past students' min and max differ by only
+  nanoseconds to a few µs, because nothing else runs and the inputs never change. If the
+  first run is noticeably slower (cold flash cache), mention it in the report.
+- Expected values from past years (≈ 1.82–1.85 ms for the original, B = 10 fastest) are
+  in [LAB_GUIDE.md](LAB_GUIDE.md), step "7b-check".
 - The unused `#define p 7` from the skeleton is dropped on purpose: a macro named `p`
   breaks other code.

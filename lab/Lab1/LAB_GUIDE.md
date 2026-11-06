@@ -152,6 +152,32 @@ show which version is wrong.
    `embedded_systems\lab\Lab1\results\gdb_dump.txt`.
 5. Also take a screenshot of the expanded `g_results` in the Expressions view, as a backup.
 
+### 7b-check. Are the numbers plausible?
+
+Before you leave, compare with what past NTUA students measured on the same board,
+exercise and skeleton (public GitHub repos, 2023–2025):
+
+| what | expected | from |
+|---|---|---|
+| `g_core_clock_hz` | **240000000** | all reports |
+| `phods_v0_original` (Q2) `avg_us` | **≈ 1820–1850 µs** (≈ 437k–444k cycles) | 1.821 ms and 1.850 ms in two reports (an older version: 1.648 ms) |
+| best optimized B = 5 version (Q3) | **≈ 700–800 µs**, i.e. roughly 2.5× faster than v0 | 0.738 ms and 0.729 ms (with *their* optimizations; ours differ, so treat this as a ballpark) |
+| square B (Q4): B = 1 / 2 / 5 / 10 | B = 1 slowest, **B = 10 fastest**, steadily decreasing | 1.24 / 0.85 / 0.74 / 0.68 ms and 1.42 / 0.96 / 0.75 / 0.70 ms |
+| rectangular (Q5) | wide blocks (**large By**, e.g. By = 10) fastest | both reports |
+| `min_us` vs `max_us` of one row | almost equal (difference of ns to a few µs) | all reports |
+
+What to do if something is off:
+- **v0 much faster (e.g. < 1000 µs).** Optimizations are probably still on: check `-O0`
+  (step 4), rebuild, run again.
+- **v0 much slower (several ms).** Check `g_core_clock_hz`. If it isn't 240 MHz, the
+  clock configuration differs, so note it and report times using the real clock.
+- **`g_all_correct` = 0.** Save the dump anyway and check which row has `correct = 0`.
+- **Our v1–v4 won't match their per-step numbers.** Their transformations were different,
+  so only v0 (identical code) is directly comparable.
+- **Possible surprise with v4.** One past report found that copying the current block into
+  a local buffer reduced the time *significantly*, so v4 may well beat v3. If it does,
+  do 7c.
+
 ### 7c. (Only if v4 was faster than v3) second run for Q4/Q5
 In `g_results`, compare `avg_us` of `phods_v3_share` (row 3) and `phods_v4_copy`
 (row 4). If **v4 is lower**:
