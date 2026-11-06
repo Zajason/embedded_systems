@@ -1,0 +1,4 @@
+.DS_Store
+test/host_test
+test/*.dSYM/
+__pycache__/
