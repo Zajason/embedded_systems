@@ -1,0 +1,360 @@
+--------------------------------------------------------------------------------
+Command:            ./bin/nms-orig input=data/detrac_y5s_640.bin
+Massif arguments:   --threshold=0 --peak-inaccuracy=0 --massif-out-file=/lab2/results/q1/massif_orig.out
+ms_print arguments: --threshold=0 /lab2/results/q1/massif_orig.out
+--------------------------------------------------------------------------------
+
+
+    KB
+970.2^                 #                                                      
+     |                 #                                                      
+     |              :  #::::  :@::: ::                      :::: :::         :
+     |    :::::  ::::  #::::  :@::: ::              ::     ::::::: :::@:::::::
+     |    ::::::@:::: :#:::::::@::: ::   ::::       ::     ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@::::::   ::: @::: @:::     ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::::::: @::::@::::::@@::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     |    ::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+     | :::::::::@::::::#:::::::@:::::::: ::: @::::@::::::@ ::::::: :: @:: ::::
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   274.4
+
+Number of snapshots: 78
+ Detailed snapshots: [13, 22 (peak), 32, 45, 51, 61, 71]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      4,607,102           77,824           77,784            40            0
+  2      7,003,473           78,336           78,296            40            0
+  3      9,999,473           79,360           79,320            40            0
+  4     13,153,419           75,256           75,224            32            0
+  5     17,681,530          863,144          863,040           104            0
+  6     20,480,133          860,704          860,608            96            0
+  7     23,288,686          868,080          867,968           112            0
+  8     26,163,487          878,048          877,888           160            0
+  9     28,952,799          865,816          865,688           128            0
+ 10     32,124,671          865,648          865,536           112            0
+ 11     35,309,903          861,472          861,344           128            0
+ 12     38,193,945          819,280          819,200            80            0
+ 13     41,132,608          823,328          823,192           136            0
+99.98% (823,192B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->75.62% (622,592B) 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| 
+->15.23% (125,400B) 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->15.23% (125,400B) 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->15.23% (125,400B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->08.83% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.83% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.83% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.83% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.83% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.25% (2,048B) 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.25% (2,048B) 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->00.25% (2,048B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->00.05% (448B) 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.05% (448B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|           ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+    ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 14     44,068,247          825,520          825,408           112            0
+ 15     47,005,618          863,528          863,408           120            0
+ 16     49,973,967          863,832          863,712           120            0
+ 17     53,257,116          863,216          863,104           112            0
+ 18     56,565,539          900,464          900,320           144            0
+ 19     59,220,396          790,096          790,016            80            0
+ 20     62,723,920          756,824          756,728            96            0
+ 21     66,740,358          813,368          813,248           120            0
+ 22     70,995,733          993,440          993,280           160            0
+99.98% (993,280B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->62.67% (622,592B) 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| 
+->29.74% (295,488B) 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->29.74% (295,488B) 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->29.74% (295,488B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->07.32% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->07.32% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->07.32% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->07.32% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->07.32% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.21% (2,048B) 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.21% (2,048B) 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->00.21% (2,048B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->00.05% (448B) 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.05% (448B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|           ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+    ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 23     74,076,816          918,032          917,888           144            0
+ 24     77,200,436          905,704          905,600           104            0
+ 25     80,677,453          907,000          906,880           120            0
+ 26     84,354,524          904,560          904,448           112            0
+ 27     87,379,536          903,272          903,168           104            0
+ 28     90,498,289          831,192          831,008           184            0
+ 29     93,578,987          831,024          830,856           168            0
+ 30     96,597,503          900,928          900,800           128            0
+ 31     99,984,201          910,352          910,224           128            0
+ 32    103,698,992          904,872          904,752           120            0
+99.99% (904,752B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->68.80% (622,592B) 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| 
+->22.88% (207,024B) 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->22.88% (207,024B) 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->22.88% (207,024B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->08.03% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.03% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.03% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.03% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.03% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.23% (2,048B) 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.23% (2,048B) 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->00.23% (2,048B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->00.04% (384B) 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.04% (384B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|           ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+    ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 33    107,432,634          915,816          915,696           120            0
+ 34    111,132,485          909,592          909,464           128            0
+ 35    115,722,734          909,424          909,312           112            0
+ 36    119,235,283          790,576          790,448           128            0
+ 37    123,058,609          910,112          909,984           128            0
+ 38    126,622,608          910,112          909,984           128            0
+ 39    131,466,920          738,944          738,880            64            0
+ 40    135,070,501          698,736          698,688            48            0
+ 41    140,389,307          799,824          799,744            80            0
+ 42    145,236,672          808,352          808,256            96            0
+ 43    148,045,961          802,352          802,240           112            0
+ 44    151,537,646          797,392          797,312            80            0
+ 45    156,511,915          751,184          751,104            80            0
+99.99% (751,104B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->82.88% (622,592B) 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| 
+->09.68% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->09.68% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->09.68% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->09.68% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->09.68% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->07.12% (53,504B) 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->07.12% (53,504B) 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->07.12% (53,504B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->00.27% (2,048B) 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.27% (2,048B) 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->00.27% (2,048B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->00.03% (256B) 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.03% (256B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|           ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+    ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 46    159,885,205          775,344          775,296            48            0
+ 47    163,794,279          775,344          775,296            48            0
+ 48    167,688,886          778,240          778,160            80            0
+ 49    170,349,393          775,728          775,664            64            0
+ 50    174,833,387          697,440          697,408            32            0
+ 51    177,843,657          775,344          775,296            48            0
+99.99% (775,296B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->80.30% (622,592B) 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| 
+->10.04% (77,824B) 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->10.04% (77,824B) 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->10.04% (77,824B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->09.38% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->09.38% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->09.38% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->09.38% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->09.38% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.26% (2,048B) 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.26% (2,048B) 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->00.26% (2,048B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->00.02% (128B) 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.02% (128B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|           ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+    ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 52    182,497,133          775,344          775,296            48            0
+ 53    185,132,249          853,168          853,120            48            0
+ 54    187,870,592          853,168          853,120            48            0
+ 55    190,455,346          751,264          751,168            96            0
+ 56    193,003,360          728,080          728,000            80            0
+ 57    195,525,207          716,976          716,928            48            0
+ 58    198,133,217          736,432          736,384            48            0
+ 59    200,685,077          697,440          697,408            32            0
+ 60    203,476,204          736,432          736,384            48            0
+ 61    206,169,832          736,432          736,384            48            0
+99.99% (736,384B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->84.54% (622,592B) 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| 
+->09.87% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->09.87% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->09.87% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->09.87% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->09.87% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->05.28% (38,912B) 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->05.28% (38,912B) 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->05.28% (38,912B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->00.28% (2,048B) 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.28% (2,048B) 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->00.28% (2,048B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->00.02% (128B) 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.02% (128B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|           ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+    ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 62    211,857,908          877,648          877,568            80            0
+ 63    216,736,846          897,040          896,912           128            0
+ 64    221,150,852          908,208          908,096           112            0
+ 65    226,347,425          904,864          904,752           112            0
+ 66    230,968,927          902,352          902,256            96            0
+ 67    235,526,632          893,456          893,376            80            0
+ 68    239,541,079          894,672          894,592            80            0
+ 69    245,253,826          897,104          897,024            80            0
+ 70    250,980,586          874,000          873,920            80            0
+ 71    256,368,531          893,456          893,376            80            0
+99.99% (893,376B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->69.68% (622,592B) 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| 
+->21.91% (195,776B) 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->21.91% (195,776B) 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->21.91% (195,776B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->08.14% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.14% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.14% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.14% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.14% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.23% (2,048B) 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.23% (2,048B) 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   ->00.23% (2,048B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|     
+->00.03% (256B) 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+| ->00.03% (256B) 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|           ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+    ->00.00% (0B) 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 72    261,257,450          892,160          892,096            64            0
+ 73    266,954,244          875,904          875,808            96            0
+ 74    272,532,345          873,392          873,312            80            0
+ 75    278,085,296          872,704          872,640            64            0
+ 76    282,894,569          874,688          874,592            96            0
+ 77    287,731,114          895,968          895,872            96            0

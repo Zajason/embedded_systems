@@ -1,0 +1,802 @@
+desc: --threshold=0 --peak-inaccuracy=0 --massif-out-file=/lab2/results/q1/massif_orig.out
+cmd: ./bin/nms-orig input=data/detrac_y5s_640.bin
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=4607102
+mem_heap_B=77784
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=7003473
+mem_heap_B=78296
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=9999473
+mem_heap_B=79320
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=13153419
+mem_heap_B=75224
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=17681530
+mem_heap_B=863040
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=20480133
+mem_heap_B=860608
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=23288686
+mem_heap_B=867968
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=26163487
+mem_heap_B=877888
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=28952799
+mem_heap_B=865688
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=32124671
+mem_heap_B=865536
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=35309903
+mem_heap_B=861344
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=38193945
+mem_heap_B=819200
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=41132608
+mem_heap_B=823192
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=detailed
+n7: 823192 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 125400 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 125400 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 125400 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 2048 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 2048 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 2048 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 448 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n0: 448 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+       n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+#-----------
+snapshot=14
+#-----------
+time=44068247
+mem_heap_B=825408
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=47005618
+mem_heap_B=863408
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=49973967
+mem_heap_B=863712
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=53257116
+mem_heap_B=863104
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=56565539
+mem_heap_B=900320
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=59220396
+mem_heap_B=790016
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=62723920
+mem_heap_B=756728
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=66740358
+mem_heap_B=813248
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=70995733
+mem_heap_B=993280
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=peak
+n7: 993280 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 295488 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 295488 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 295488 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 2048 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 2048 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 2048 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 448 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n0: 448 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+       n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+#-----------
+snapshot=23
+#-----------
+time=74076816
+mem_heap_B=917888
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=77200436
+mem_heap_B=905600
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=80677453
+mem_heap_B=906880
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=84354524
+mem_heap_B=904448
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=87379536
+mem_heap_B=903168
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=90498289
+mem_heap_B=831008
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=93578987
+mem_heap_B=830856
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=96597503
+mem_heap_B=900800
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=99984201
+mem_heap_B=910224
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=103698992
+mem_heap_B=904752
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=detailed
+n7: 904752 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 207024 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 207024 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 207024 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 2048 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 2048 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 2048 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 384 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n0: 384 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+       n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+#-----------
+snapshot=33
+#-----------
+time=107432634
+mem_heap_B=915696
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=111132485
+mem_heap_B=909464
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=115722734
+mem_heap_B=909312
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=119235283
+mem_heap_B=790448
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=123058609
+mem_heap_B=909984
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=126622608
+mem_heap_B=909984
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=131466920
+mem_heap_B=738880
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=135070501
+mem_heap_B=698688
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=140389307
+mem_heap_B=799744
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=145236672
+mem_heap_B=808256
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=148045961
+mem_heap_B=802240
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=151537646
+mem_heap_B=797312
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=156511915
+mem_heap_B=751104
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=detailed
+n7: 751104 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 53504 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 53504 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 53504 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 2048 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 2048 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 2048 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 256 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n0: 256 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+       n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+#-----------
+snapshot=46
+#-----------
+time=159885205
+mem_heap_B=775296
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=163794279
+mem_heap_B=775296
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=167688886
+mem_heap_B=778160
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=170349393
+mem_heap_B=775664
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=174833387
+mem_heap_B=697408
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=177843657
+mem_heap_B=775296
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=detailed
+n7: 775296 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 77824 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 77824 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 77824 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 2048 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 2048 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 2048 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 128 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n0: 128 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+       n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+#-----------
+snapshot=52
+#-----------
+time=182497133
+mem_heap_B=775296
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=185132249
+mem_heap_B=853120
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=187870592
+mem_heap_B=853120
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=190455346
+mem_heap_B=751168
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=193003360
+mem_heap_B=728000
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=195525207
+mem_heap_B=716928
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=198133217
+mem_heap_B=736384
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=200685077
+mem_heap_B=697408
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=203476204
+mem_heap_B=736384
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=206169832
+mem_heap_B=736384
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=detailed
+n7: 736384 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 38912 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 38912 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 38912 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 2048 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 2048 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 2048 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 128 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n0: 128 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+       n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+#-----------
+snapshot=62
+#-----------
+time=211857908
+mem_heap_B=877568
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=216736846
+mem_heap_B=896912
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=221150852
+mem_heap_B=908096
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=226347425
+mem_heap_B=904752
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=230968927
+mem_heap_B=902256
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=235526632
+mem_heap_B=893376
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=239541079
+mem_heap_B=894592
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=245253826
+mem_heap_B=897024
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=250980586
+mem_heap_B=873920
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=256368531
+mem_heap_B=893376
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=detailed
+n7: 893376 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x108F7F: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 195776 0x10A54F: void std::vector<Detection, std::allocator<Detection> >::_M_realloc_insert<Detection const&>(__gnu_cxx::__normal_iterator<Detection*, std::vector<Detection, std::allocator<Detection> > >, Detection const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 195776 0x10A2F3: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 195776 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 2048 0x10AE7F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n1: 2048 0x10AD2B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 2048 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 256 0x10A16B: nms_orig(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+  n0: 256 0x10901B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10AC0F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+       n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10ABEF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+   n0: 0 0x108F6B: main (in /lab2/Source_codes/yolo_nms/bin/nms-orig)
+#-----------
+snapshot=72
+#-----------
+time=261257450
+mem_heap_B=892096
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=266954244
+mem_heap_B=875808
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=272532345
+mem_heap_B=873312
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=278085296
+mem_heap_B=872640
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=282894569
+mem_heap_B=874592
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=287731114
+mem_heap_B=895872
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
