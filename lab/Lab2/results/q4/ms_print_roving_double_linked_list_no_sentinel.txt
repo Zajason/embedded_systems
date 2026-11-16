@@ -1,0 +1,171 @@
+--------------------------------------------------------------------------------
+Command:            ./bin/nms-flag-roving_double_linked_list_no_sentinel-glibc input=data/detrac_y5s_640.bin
+Massif arguments:   --threshold=0 --peak-inaccuracy=0 --massif-out-file=/lab2/results/q4/massif_roving_double_linked_list_no_sentinel.out
+ms_print arguments: --threshold=0 /lab2/results/q4/massif_roving_double_linked_list_no_sentinel.out
+--------------------------------------------------------------------------------
+
+
+    KB
+848.2^                                   ##                                   
+     |               :: :::::    : :  :::# ::                    :::::::::::::
+     |               : :: :::    : ::::::# :    ::               :: : :: : : :
+     |               : :: ::::::::::: :::# : ::::::  ::::   ::   :: : :: : : :
+     |               : :: :::: : :::: :::# : :: ::::::::::::: ::::: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     |               : :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+     | ::::::::::::::: :: :::: : :::: :::# : :: :::: ::::: :: :: :: : :: : : :
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   65.12
+
+Number of snapshots: 53
+ Detailed snapshots: [24 (peak), 52]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      1,787,779           72,712           72,704             8            0
+  2      2,930,693           77,440           77,400            40            0
+  3      4,703,978           77,824           77,784            40            0
+  4      7,100,193           78,856           78,808            48            0
+  5      7,100,349           78,336           78,296            40            0
+  6     10,096,113           80,392           80,344            48            0
+  7     10,096,349           79,360           79,320            40            0
+  8     13,250,295           75,256           75,224            32            0
+  9     14,905,097          844,488          831,686        12,802            0
+ 10     16,538,223          824,600          813,496        11,104            0
+ 11     17,644,956          843,176          830,456        12,720            0
+ 12     19,078,542          842,304          829,695        12,609            0
+ 13     20,277,013          841,704          829,149        12,555            0
+ 14     21,483,300          835,152          823,165        11,987            0
+ 15     22,359,759          751,440          746,712         4,728            0
+ 16     23,897,006          776,648          769,728         6,920            0
+ 17     25,700,524          843,360          830,624        12,736            0
+ 18     26,777,878          762,864          757,144         5,720            0
+ 19     27,542,289          847,120          834,072        13,048            0
+ 20     29,344,824          797,448          788,704         8,744            0
+ 21     30,564,646          833,136          821,304        11,832            0
+ 22     31,891,849          843,256          830,544        12,712            0
+ 23     32,574,472          838,656          826,344        12,312            0
+ 24     33,905,623          868,576          853,699        14,877            0
+98.29% (853,699B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->71.68% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| 
+->17.87% (155,232B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| ->17.87% (155,232B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|   
+->08.37% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.37% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.37% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.37% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.37% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.24% (2,048B) 0x10AA1F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| ->00.24% (2,048B) 0x10A8CB: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|   ->00.24% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|     
+->00.07% (643B) 0x109ABB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| ->00.07% (643B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|   
+->00.06% (480B) 0x10A07B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| ->00.06% (480B) 0x1099EF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|   ->00.06% (480B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A7AF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A78F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 25     35,403,377          836,352          824,240        12,112            0
+ 26     37,091,576          744,552          740,424         4,128            0
+ 27     38,643,772          780,520          773,264         7,256            0
+ 28     40,439,799          789,904          781,832         8,072            0
+ 29     41,458,084          785,504          777,800         7,704            0
+ 30     42,461,809          776,560          769,648         6,912            0
+ 31     43,599,902          700,400          700,112           288            0
+ 32     44,756,352          775,920          769,064         6,856            0
+ 33     45,691,127          775,576          768,736         6,840            0
+ 34     46,803,729          754,768          749,752         5,016            0
+ 35     47,946,484          775,376          768,568         6,808            0
+ 36     49,270,508          718,816          716,912         1,904            0
+ 37     50,552,529          730,096          727,224         2,872            0
+ 38     51,839,071          758,352          753,024         5,328            0
+ 39     53,333,744          714,304          712,792         1,512            0
+ 40     54,862,903          704,736          704,056           680            0
+ 41     56,021,539          837,272          825,080        12,192            0
+ 42     57,621,765          847,856          834,744        13,112            0
+ 43     59,276,556          848,616          835,424        13,192            0
+ 44     60,795,075          862,768          848,360        14,408            0
+ 45     62,561,646          856,144          842,312        13,832            0
+ 46     64,251,190          859,912          845,752        14,160            0
+ 47     65,956,692          843,560          830,808        12,752            0
+ 48     67,570,879          843,736          830,968        12,768            0
+ 49     68,263,154          701,472          701,440            32            0
+ 50     68,265,662           78,872           78,848            24            0
+ 51     68,282,395            4,104            4,096             8            0
+ 52     68,284,303                0                0             0            0
+00.00% (0B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->00.00% (0B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| 
+->00.00% (0B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| ->00.00% (0B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|   
+->00.00% (0B) 0x109ABB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| ->00.00% (0B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|   
+->00.00% (0B) 0x10A07B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::dllRovingExtension<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| ->00.00% (0B) 0x1099EF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|   ->00.00% (0B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x10AA1F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+| ->00.00% (0B) 0x10A8CB: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|   ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->00.00% (0B) 0x4005623: call_init (dl-init.c:70)
+|   ->00.00% (0B) 0x4005623: call_init (dl-init.c:26)
+|     ->00.00% (0B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->00.00% (0B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|     | ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|     |   ->00.00% (0B) 0x10A7AF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|     |     ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|     |       
+|     ->00.00% (0B) 0x4B59317: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|       ->00.00% (0B) 0x4B58457: _IO_new_file_xsputn (fileops.c:1243)
+|         ->00.00% (0B) 0x4B58457: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|           ->00.00% (0B) 0x4B4346F: outstring_func (vfprintf-internal.c:239)
+|             ->00.00% (0B) 0x4B4346F: __vfprintf_internal (vfprintf-internal.c:1263)
+|               ->00.00% (0B) 0x4BD80F7: __printf_chk (printf_chk.c:33)
+|                 ->00.00% (0B) 0x109243: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+|                   
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A78F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_double_linked_list_no_sentinel-glibc)
+      

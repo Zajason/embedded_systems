@@ -1,0 +1,254 @@
+--------------------------------------------------------------------------------
+Command:            ./bin/nms-double_linked_list_no_sentinel-glibc input=data/detrac_y5s_640.bin
+Massif arguments:   --threshold=0 --peak-inaccuracy=0 --massif-out-file=/lab2/results/q2/massif_double_linked_list_no_sentinel.out
+ms_print arguments: --threshold=0 /lab2/results/q2/massif_double_linked_list_no_sentinel.out
+--------------------------------------------------------------------------------
+
+
+    KB
+847.5^                                   ##                                   
+     |                  @    :           #                            ::::::: 
+     |               :::@ ::::   :    :::# ::       :   ::       :    : :: :  
+     |               : :@:: :::  :  ::: :# :  :: :::::: :        :    : :: : :
+     |               : :@:: ::::::::::: :# : :::::  ::::: ::::::::::::: :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     |               : :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+     | ::::::::::::::: :@:: :::: :: ::: :# : :::::  ::::: ::: :: :: : : :: : @
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   61.64
+
+Number of snapshots: 69
+ Detailed snapshots: [11, 24 (peak), 55, 65]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      1,787,772           72,712           72,704             8            0
+  2      2,930,686           77,440           77,400            40            0
+  3      4,703,971           77,824           77,784            40            0
+  4      7,100,186           78,856           78,808            48            0
+  5      7,100,342           78,336           78,296            40            0
+  6     10,096,106           80,392           80,344            48            0
+  7     10,096,342           79,360           79,320            40            0
+  8     13,250,288           75,256           75,224            32            0
+  9     14,187,548          794,256          785,800         8,456            0
+ 10     15,552,967          786,336          778,560         7,776            0
+ 11     16,419,531          854,752          841,032        13,720            0
+98.39% (841,032B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.84% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| 
+->16.77% (143,304B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->16.77% (143,304B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   
+->08.51% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.51% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.51% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.51% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.51% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.24% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->00.24% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   ->00.24% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|     
+->00.04% (384B) 0x109E37: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->00.04% (384B) 0x1099EB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   ->00.04% (384B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12     17,789,121          764,080          758,248         5,832            0
+ 13     18,741,402          797,896          789,120         8,776            0
+ 14     19,844,839          786,304          778,536         7,768            0
+ 15     20,797,126          833,368          821,504        11,864            0
+ 16     22,174,032          748,992          744,472         4,520            0
+ 17     23,340,874          734,968          731,664         3,304            0
+ 18     24,969,816          817,656          807,160        10,496            0
+ 19     25,932,696          726,800          724,208         2,592            0
+ 20     27,003,156          768,088          761,904         6,184            0
+ 21     28,149,780          739,312          735,632         3,680            0
+ 22     29,419,627          820,752          809,992        10,760            0
+ 23     30,719,649          814,456          804,240        10,216            0
+ 24     31,986,330          867,816          852,960        14,856            0
+98.29% (852,960B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->71.74% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| 
+->17.89% (155,232B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->17.89% (155,232B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   
+->08.38% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.38% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.38% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.38% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.38% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.24% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->00.24% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   ->00.24% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|     
+->00.04% (384B) 0x109E37: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->00.04% (384B) 0x1099EB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   ->00.04% (384B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 25     33,521,850          806,616          797,080         9,536            0
+ 26     35,091,601          728,424          725,696         2,728            0
+ 27     36,713,306          764,264          758,416         5,848            0
+ 28     37,630,872          753,552          748,632         4,920            0
+ 29     38,557,908          731,144          728,176         2,968            0
+ 30     39,497,813          740,232          736,472         3,760            0
+ 31     41,333,482          784,912          777,272         7,640            0
+ 32     42,335,968          769,456          763,160         6,296            0
+ 33     43,438,044          750,208          745,584         4,624            0
+ 34     44,572,209          703,952          703,352           600            0
+ 35     45,669,911          781,600          774,248         7,352            0
+ 36     46,807,201          724,632          722,232         2,400            0
+ 37     48,040,620          734,824          731,536         3,288            0
+ 38     49,298,445          721,360          719,248         2,112            0
+ 39     50,584,853          719,888          717,904         1,984            0
+ 40     51,932,239          721,728          719,584         2,144            0
+ 41     53,289,623          794,104          785,656         8,448            0
+ 42     54,647,253          734,048          730,824         3,224            0
+ 43     56,181,231          727,904          725,216         2,688            0
+ 44     57,736,752          863,808          849,304        14,504            0
+ 45     59,349,292          840,624          828,136        12,488            0
+ 46     60,953,988          842,904          830,216        12,688            0
+ 47     62,697,334          836,136          824,040        12,096            0
+ 48     64,522,658          747,776          743,360         4,416            0
+ 49     64,611,993          709,504          708,416         1,088            0
+ 50     64,612,281          709,136          708,080         1,056            0
+ 51     64,612,444          708,696          707,680         1,016            0
+ 52     64,612,606          708,072          707,112           960            0
+ 53     64,612,791          707,152          706,272           880            0
+ 54     64,612,976          706,232          705,432           800            0
+ 55     64,613,161          705,312          704,592           720            0
+99.90% (704,592B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->88.27% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| 
+->10.31% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->10.31% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->10.31% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->10.31% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->10.31% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->01.00% (7,056B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->01.00% (7,056B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   
+->00.29% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->00.29% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   ->00.29% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|     
+->00.03% (192B) 0x109E37: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->00.03% (192B) 0x1099EB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   ->00.03% (192B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 56     64,613,346          704,392          703,752           640            0
+ 57     64,613,531          703,472          702,912           560            0
+ 58     64,613,716          702,552          702,072           480            0
+ 59     64,613,901          701,632          701,232           400            0
+ 60     64,614,086          700,712          700,392           320            0
+ 61     64,614,271          699,792          699,552           240            0
+ 62     64,614,429          699,168          698,984           184            0
+ 63     64,614,588          698,544          698,416           128            0
+ 64     64,614,773          697,624          697,576            48            0
+ 65     64,615,321          701,472          701,440            32            0
+100.00% (701,440B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->88.76% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| 
+->10.36% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->10.36% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->10.36% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->10.36% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->10.36% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.58% (4,096B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.58% (4,096B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.58% (4,096B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.58% (4,096B) 0x4B59317: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+|     | ->00.58% (4,096B) 0x4B58457: _IO_new_file_xsputn (fileops.c:1243)
+|     |   ->00.58% (4,096B) 0x4B58457: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+|     |     ->00.58% (4,096B) 0x4B4346F: outstring_func (vfprintf-internal.c:239)
+|     |       ->00.58% (4,096B) 0x4B4346F: __vfprintf_internal (vfprintf-internal.c:1263)
+|     |         ->00.58% (4,096B) 0x4BD80F7: __printf_chk (printf_chk.c:33)
+|     |           ->00.58% (4,096B) 0x109243: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|     |             
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|             
+->00.29% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->00.29% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   ->00.29% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->00.00% (0B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   
+->00.00% (0B) 0x109E37: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBaseNoSentinel<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+| ->00.00% (0B) 0x1099EB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|   ->00.00% (0B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-double_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 66     64,617,808           78,872           78,848            24            0
+ 67     64,634,541            4,104            4,096             8            0
+ 68     64,636,449                0                0             0            0

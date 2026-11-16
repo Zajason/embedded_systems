@@ -1,0 +1,233 @@
+--------------------------------------------------------------------------------
+Command:            ./bin/nms-flag-double_linked_list-glibc input=data/detrac_y5s_640.bin
+Massif arguments:   --threshold=0 --peak-inaccuracy=0 --massif-out-file=/lab2/results/q4/massif_double_linked_list.out
+ms_print arguments: --threshold=0 /lab2/results/q4/massif_double_linked_list.out
+--------------------------------------------------------------------------------
+
+
+    KB
+849.3^                                   #                                    
+     |               :@:::::     :    :::#::                    ::    :      :
+     |               :@: :::     :    :: #:      ::     :       : ::  :    :::
+     |               :@: ::::::  ::   :: #: ::::::: ::::: ::    : : :::  ::: :
+     |               :@: ::::  ::::::::: #: : : :::::: :::: ::::: : : :::: : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     |               :@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+     | :::::::::::::::@: ::::  ::::: ::: #: : : :::::: :::: :: :: : : :: : : @
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   68.63
+
+Number of snapshots: 61
+ Detailed snapshots: [10, 24 (peak), 52]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      1,787,768           72,712           72,704             8            0
+  2      2,930,682           77,440           77,400            40            0
+  3      4,703,967           77,824           77,784            40            0
+  4      7,100,182           78,856           78,808            48            0
+  5      7,100,338           78,336           78,296            40            0
+  6     10,096,102           80,392           80,344            48            0
+  7     10,096,338           79,360           79,320            40            0
+  8     13,250,284           75,256           75,224            32            0
+  9     15,018,637          845,592          832,646        12,946            0
+ 10     16,028,497          853,696          840,032        13,664            0
+98.40% (840,032B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.93% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| 
+->16.41% (140,112B) 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->16.41% (140,112B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   
+->08.52% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.52% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.52% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.52% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.52% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.24% (2,048B) 0x10ABEF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.24% (2,048B) 0x10AA9B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   ->00.24% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|     
+->00.18% (1,512B) 0x10A2A7: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.18% (1,512B) 0x109B3B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   ->00.18% (1,512B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|     
+->00.08% (648B) 0x10A28B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.08% (648B) 0x109B3B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   ->00.08% (648B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|     
+->00.05% (416B) 0x109C3B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.05% (416B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   
+->00.00% (0B) 0x109B1B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.00% (0B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A97F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A95F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 11     17,699,838          844,952          832,047        12,905            0
+ 12     19,144,729          833,240          821,376        11,864            0
+ 13     20,103,242          836,112          824,000        12,112            0
+ 14     21,385,618          850,048          836,713        13,335            0
+ 15     22,967,707          756,224          751,032         5,192            0
+ 16     25,082,879          729,368          726,528         2,840            0
+ 17     25,988,379          730,560          727,608         2,952            0
+ 18     27,210,465          836,824          824,640        12,184            0
+ 19     28,447,624          773,152          766,488         6,664            0
+ 20     29,727,919          720,624          718,536         2,088            0
+ 21     31,041,850          739,136          735,432         3,704            0
+ 22     32,416,041          840,128          827,640        12,488            0
+ 23     33,866,395          844,912          832,008        12,904            0
+ 24     35,280,417          869,680          854,659        15,021            0
+98.27% (854,659B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->71.59% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| 
+->17.85% (155,232B) 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->17.85% (155,232B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   
+->08.36% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.36% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.36% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.36% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.36% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.24% (2,048B) 0x10ABEF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.24% (2,048B) 0x10AA9B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   ->00.24% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|     
+->00.12% (1,008B) 0x10A2A7: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.12% (1,008B) 0x109B3B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   ->00.12% (1,008B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|     
+->00.07% (643B) 0x109C3B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.07% (643B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   
+->00.05% (432B) 0x10A28B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.05% (432B) 0x109B3B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   ->00.05% (432B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|     
+->00.00% (0B) 0x109B1B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.00% (0B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A97F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A95F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 25     36,929,481          841,320          828,720        12,600            0
+ 26     38,684,422          745,472          741,240         4,232            0
+ 27     40,335,525          767,824          761,640         6,184            0
+ 28     42,255,716          777,208          770,208         7,000            0
+ 29     43,351,991          784,584          776,928         7,656            0
+ 30     44,431,811          787,968          780,024         7,944            0
+ 31     45,657,761          725,072          722,616         2,456            0
+ 32     46,872,124          778,496          771,384         7,112            0
+ 33     47,865,832          773,736          767,040         6,696            0
+ 34     49,062,006          768,752          762,504         6,248            0
+ 35     50,275,534          786,232          778,464         7,768            0
+ 36     51,571,883          716,584          714,864         1,720            0
+ 37     52,936,752          742,432          738,456         3,976            0
+ 38     54,343,236          721,208          719,088         2,120            0
+ 39     55,792,806          702,608          702,120           488            0
+ 40     57,370,432          717,712          715,896         1,816            0
+ 41     58,961,579          848,128          834,936        13,192            0
+ 42     60,611,306          797,256          788,496         8,760            0
+ 43     62,274,374          774,640          767,880         6,760            0
+ 44     64,016,707          858,720          844,632        14,088            0
+ 45     65,778,241          701,776          701,352           424            0
+ 46     67,548,880          775,376          768,552         6,824            0
+ 47     69,456,671          791,488          783,240         8,248            0
+ 48     71,206,775          842,448          829,752        12,696            0
+ 49     71,944,476          703,712          703,128           584            0
+ 50     71,944,666          702,792          702,288           504            0
+ 51     71,944,856          701,872          701,448           424            0
+ 52     71,945,046          700,952          700,608           344            0
+99.95% (700,608B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->88.82% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| 
+->10.37% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->10.37% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->10.37% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->10.37% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->10.37% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.43% (3,024B) 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.43% (3,024B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   
+->00.29% (2,048B) 0x10ABEF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.29% (2,048B) 0x10AA9B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   ->00.29% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|     
+->00.02% (168B) 0x10A2A7: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.02% (168B) 0x109B3B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   ->00.02% (168B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|     
+->00.01% (72B) 0x10A28B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > > >(float&, DDTLibrary::List<DDTLibrary::dll<DDTLibrary::listBase<DDTLibrary::dllListElement<Detection, ddtr::malloc_allocator> > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.01% (72B) 0x109B3B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   ->00.01% (72B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|     
+->00.00% (0B) 0x109B1B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.00% (0B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   
+->00.00% (0B) 0x109C3B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+| ->00.00% (0B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A97F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A95F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-double_linked_list-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 53     71,945,236          700,032          699,768           264            0
+ 54     71,945,426          699,112          698,928           184            0
+ 55     71,945,616          698,192          698,088           104            0
+ 56     71,945,804          697,368          697,344            24            0
+ 57     71,946,278          701,472          701,440            32            0
+ 58     71,948,786           78,872           78,848            24            0
+ 59     71,965,519            4,104            4,096             8            0
+ 60     71,967,427                0                0             0            0

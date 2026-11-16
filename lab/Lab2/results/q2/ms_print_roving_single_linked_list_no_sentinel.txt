@@ -1,0 +1,330 @@
+--------------------------------------------------------------------------------
+Command:            ./bin/nms-roving_single_linked_list_no_sentinel-glibc input=data/detrac_y5s_640.bin
+Massif arguments:   --threshold=0 --peak-inaccuracy=0 --massif-out-file=/lab2/results/q2/massif_roving_single_linked_list_no_sentinel.out
+ms_print arguments: --threshold=0 /lab2/results/q2/massif_roving_single_linked_list_no_sentinel.out
+--------------------------------------------------------------------------------
+
+
+    KB
+833.1^                                 #                                      
+     |              @@   :::           #                       ::       ::    
+     |             @@    ::    :: :   :#:::    ::              :    ::::: ::  
+     |             @@ :  ::   :: ::::::#: :  ::: :: ::::   :  :: :::: : : :   
+     |             @@ ::::: :::: ::: ::#: :::::: ::::: ::::::::: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     |             @@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+     | ::::::::::::@@ :: :: : :: ::: ::#: :: ::: ::::: ::: :: :: :: : : : : :@
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   76.44
+
+Number of snapshots: 83
+ Detailed snapshots: [9, 10, 23 (peak), 57, 67, 77]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      1,787,761           72,712           72,704             8            0
+  2      2,930,675           77,440           77,400            40            0
+  3      4,703,960           77,824           77,784            40            0
+  4      7,100,175           78,856           78,808            48            0
+  5      7,100,331           78,336           78,296            40            0
+  6     10,096,095           80,392           80,344            48            0
+  7     10,096,331           79,360           79,320            40            0
+  8     13,250,277           75,256           75,224            32            0
+  9     14,738,314          777,104          773,264         3,840            0
+99.51% (773,264B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->80.12% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| 
+->09.72% (75,520B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->09.72% (75,520B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   
+->09.36% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->09.36% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->09.36% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->09.36% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->09.36% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.26% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.26% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.26% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.05% (400B) 0x109E4B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.05% (400B) 0x1099E7: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.05% (400B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10     15,920,285          838,272          831,504         6,768            0
+99.19% (831,504B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->74.27% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| 
+->15.92% (133,440B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->15.92% (133,440B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   
+->08.67% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.67% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.67% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.67% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.67% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.24% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.24% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.24% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.09% (720B) 0x109E4B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.09% (720B) 0x1099E7: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.09% (720B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 11     17,831,647          743,760          741,504         2,256            0
+ 12     19,367,364          716,792          715,824           968            0
+ 13     21,599,601          828,600          822,304         6,296            0
+ 14     23,144,531          815,584          809,904         5,680            0
+ 15     24,852,192          705,528          705,104           424            0
+ 16     26,780,313          764,088          760,864         3,224            0
+ 17     28,918,013          800,200          795,264         4,936            0
+ 18     30,150,292          731,576          729,904         1,672            0
+ 19     31,523,797          768,704          765,264         3,440            0
+ 20     32,993,064          765,608          762,304         3,304            0
+ 21     34,592,091          749,976          747,424         2,552            0
+ 22     36,211,332          768,960          765,504         3,456            0
+ 23     37,498,277          853,128          845,664         7,464            0
+99.13% (845,664B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.98% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| 
+->17.33% (147,840B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->17.33% (147,840B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   
+->08.52% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.52% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.52% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.52% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.52% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.24% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.24% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.24% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.06% (480B) 0x109E4B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.06% (480B) 0x1099E7: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.06% (480B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 24     38,441,764          789,200          784,784         4,416            0
+ 25     40,224,358          808,192          802,864         5,328            0
+ 26     42,282,664          698,800          698,704            96            0
+ 27     44,436,371          743,920          741,664         2,256            0
+ 28     45,556,779          767,272          763,904         3,368            0
+ 29     46,728,683          771,728          768,144         3,584            0
+ 30     47,887,227          762,736          759,584         3,152            0
+ 31     49,117,364          758,864          755,904         2,960            0
+ 32     50,398,647          708,128          707,584           544            0
+ 33     51,768,812          727,704          726,224         1,480            0
+ 34     53,219,914          755,168          752,384         2,784            0
+ 35     54,690,173          750,968          748,384         2,584            0
+ 36     56,222,229          715,264          714,384           880            0
+ 37     57,757,994          721,664          720,464         1,200            0
+ 38     59,336,914          751,224          748,624         2,600            0
+ 39     60,928,914          709,888          709,264           624            0
+ 40     62,634,874          726,944          725,504         1,440            0
+ 41     64,231,765          818,440          812,624         5,816            0
+ 42     65,994,059          730,824          729,184         1,640            0
+ 43     67,866,394          766,856          763,504         3,352            0
+ 44     69,739,970          771,976          768,384         3,592            0
+ 45     71,753,278          806,080          800,864         5,216            0
+ 46     73,770,781          821,448          815,504         5,944            0
+ 47     75,922,374          787,096          782,784         4,312            0
+ 48     78,143,008          724,512          723,184         1,328            0
+ 49     80,124,456          711,080          710,384           696            0
+ 50     80,124,987          710,912          710,224           688            0
+ 51     80,125,854          710,744          710,064           680            0
+ 52     80,126,164          710,576          709,904           672            0
+ 53     80,126,474          710,408          709,744           664            0
+ 54     80,126,784          710,240          709,584           656            0
+ 55     80,127,094          710,072          709,424           648            0
+ 56     80,127,404          709,904          709,264           640            0
+ 57     80,127,714          709,736          709,104           632            0
+99.91% (709,104B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->87.72% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| 
+->10.24% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->10.24% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->10.24% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->10.24% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->10.24% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->01.60% (11,360B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->01.60% (11,360B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   
+->00.29% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.29% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.29% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.06% (400B) 0x109E4B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.06% (400B) 0x1099E7: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.06% (400B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 58     80,128,024          709,568          708,944           624            0
+ 59     80,128,762          709,400          708,784           616            0
+ 60     80,129,121          709,232          708,624           608            0
+ 61     80,129,738          709,064          708,464           600            0
+ 62     80,129,940          708,728          708,144           584            0
+ 63     80,130,409          708,560          707,984           576            0
+ 64     80,130,712          708,224          707,664           560            0
+ 65     80,130,875          707,800          707,264           536            0
+ 66     80,131,037          707,208          706,704           504            0
+ 67     80,131,222          706,368          705,904           464            0
+99.93% (705,904B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->88.14% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| 
+->10.29% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->10.29% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->10.29% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->10.29% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->10.29% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->01.18% (8,320B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->01.18% (8,320B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   
+->00.29% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.29% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.29% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.03% (240B) 0x109E4B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.03% (240B) 0x1099E7: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.03% (240B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 68     80,131,407          705,528          705,104           424            0
+ 69     80,131,592          704,688          704,304           384            0
+ 70     80,131,777          703,848          703,504           344            0
+ 71     80,131,962          703,008          702,704           304            0
+ 72     80,132,147          702,168          701,904           264            0
+ 73     80,132,332          701,328          701,104           224            0
+ 74     80,132,517          700,488          700,304           184            0
+ 75     80,132,702          699,648          699,504           144            0
+ 76     80,132,860          699,056          698,944           112            0
+ 77     80,133,019          698,464          698,384            80            0
+99.99% (698,384B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->89.14% (622,592B) 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| 
+->10.41% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->10.41% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->10.41% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->10.41% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->10.41% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.29% (2,048B) 0x10A7CF: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.29% (2,048B) 0x10A67B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.29% (2,048B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.14% (960B) 0x10989B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.14% (960B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   
+->00.01% (80B) 0x109E4B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBaseNoSentinel<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+| ->00.01% (80B) 0x1099E7: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|   ->00.01% (80B) 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|     
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10A55F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|           ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10A53F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+    ->00.00% (0B) 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-roving_single_linked_list_no_sentinel-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 78     80,133,204          697,624          697,584            40            0
+ 79     80,133,752          701,472          701,440            32            0
+ 80     80,136,239           78,872           78,848            24            0
+ 81     80,152,972            4,104            4,096             8            0
+ 82     80,154,880                0                0             0            0

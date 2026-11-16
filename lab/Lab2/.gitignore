@@ -2,3 +2,7 @@ Embedded-Systems-Second-Exercise/
 Source_codes/yolo_nms/bin/
 Source_codes/yolo_nms/m.out
 *.out.tmp
+Source_codes/yolo_nms/board_results/
+Source_codes/yolo_nms/measure*.log
+lab2_board.tar.gz
+board_results.tar.gz

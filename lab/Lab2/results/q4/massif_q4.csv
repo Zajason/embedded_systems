@@ -1,0 +1,10 @@
+ddt,allocator,nms_peak_B
+vector,glibc,295992
+single_linked_list,glibc,149875
+double_linked_list,glibc,157315
+roving_single_linked_list,glibc,149971
+roving_double_linked_list,glibc,157411
+single_linked_list_no_sentinel,glibc,148867
+double_linked_list_no_sentinel,glibc,156259
+roving_single_linked_list_no_sentinel,glibc,148963
+roving_double_linked_list_no_sentinel,glibc,156355

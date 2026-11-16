@@ -1,0 +1,850 @@
+desc: --threshold=0 --peak-inaccuracy=0 --massif-out-file=/lab2/results/q4/massif_roving_single_linked_list.out
+cmd: ./bin/nms-flag-roving_single_linked_list-glibc input=data/detrac_y5s_640.bin
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1787772
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2930686
+mem_heap_B=77400
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=4703971
+mem_heap_B=77784
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=7100186
+mem_heap_B=78808
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=7100342
+mem_heap_B=78296
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=10096106
+mem_heap_B=80344
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=10096342
+mem_heap_B=79320
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=13250288
+mem_heap_B=75224
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=14505218
+mem_heap_B=822695
+mem_heap_extra_B=6337
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=15488068
+mem_heap_B=833334
+mem_heap_extra_B=6922
+mem_stacks_B=0
+heap_tree=detailed
+n10: 833334 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 133440 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 133440 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 2048 0x10AB9F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 2048 0x10AA4B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 2048 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 1440 0x10A267: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 1440 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 1440 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 792 0x10A24B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 792 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 792 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 318 0x109BFB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 318 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109B0B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10A92F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+       n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10A90F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+#-----------
+snapshot=11
+#-----------
+time=17043369
+mem_heap_B=835771
+mem_heap_extra_B=7005
+mem_stacks_B=0
+heap_tree=detailed
+n10: 835771 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 136480 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 136480 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 2048 0x10AB9F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 2048 0x10AA4B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 2048 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 960 0x10A267: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 960 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 960 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 528 0x10A24B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 528 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 528 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 459 0x109BFB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 459 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109B0B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10A92F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+       n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10A90F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+#-----------
+snapshot=12
+#-----------
+time=18206374
+mem_heap_B=819776
+mem_heap_extra_B=6192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=19089271
+mem_heap_B=824447
+mem_heap_extra_B=6433
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=20295033
+mem_heap_B=823925
+mem_heap_extra_B=6419
+mem_stacks_B=0
+heap_tree=detailed
+n10: 823925 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 124640 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 124640 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 2048 0x10AB9F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 2048 0x10AA4B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 2048 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 960 0x10A267: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 960 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 960 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 528 0x10A24B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 528 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 528 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 453 0x109BFB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 453 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109B0B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10A92F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+       n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10A90F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+#-----------
+snapshot=15
+#-----------
+time=21506713
+mem_heap_B=818573
+mem_heap_extra_B=6163
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=23167271
+mem_heap_B=713448
+mem_heap_extra_B=864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=24416494
+mem_heap_B=763152
+mem_heap_extra_B=3384
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=25748940
+mem_heap_B=825640
+mem_heap_extra_B=6520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=26881702
+mem_heap_B=740824
+mem_heap_extra_B=2256
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=28264069
+mem_heap_B=813144
+mem_heap_extra_B=5872
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=29440350
+mem_heap_B=818688
+mem_heap_extra_B=6184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=30638000
+mem_heap_B=814904
+mem_heap_extra_B=5960
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=32664852
+mem_heap_B=823792
+mem_heap_extra_B=6416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=34000477
+mem_heap_B=847315
+mem_heap_extra_B=7581
+mem_stacks_B=0
+heap_tree=peak
+n10: 847315 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 147840 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 147840 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 2048 0x10AB9F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 2048 0x10AA4B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 2048 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 960 0x10A267: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 960 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 960 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 643 0x109BFB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 643 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 528 0x10A24B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 528 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 528 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109B0B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10A92F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+       n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10A90F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+#-----------
+snapshot=25
+#-----------
+time=35507147
+mem_heap_B=816360
+mem_heap_extra_B=6056
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=37201845
+mem_heap_B=740328
+mem_heap_extra_B=2208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=38753733
+mem_heap_B=769056
+mem_heap_extra_B=3656
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=40556797
+mem_heap_B=780576
+mem_heap_extra_B=4232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=42591605
+mem_heap_B=774584
+mem_heap_extra_B=3944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=43765682
+mem_heap_B=751760
+mem_heap_extra_B=2768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=44888957
+mem_heap_B=766656
+mem_heap_extra_B=3536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=45824965
+mem_heap_B=762800
+mem_heap_extra_B=3320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=46954482
+mem_heap_B=758480
+mem_heap_extra_B=3104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=48101700
+mem_heap_B=773680
+mem_heap_extra_B=3864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=49317493
+mem_heap_B=713448
+mem_heap_extra_B=864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=50584220
+mem_heap_B=738016
+mem_heap_extra_B=2104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=51878713
+mem_heap_B=710712
+mem_heap_extra_B=704
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=53147654
+mem_heap_B=717752
+mem_heap_extra_B=1056
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=54487793
+mem_heap_B=715032
+mem_heap_extra_B=920
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=55355918
+mem_heap_B=823456
+mem_heap_extra_B=6376
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=56907609
+mem_heap_B=706640
+mem_heap_extra_B=512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=57803825
+mem_heap_B=842832
+mem_heap_extra_B=7368
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=59455549
+mem_heap_B=823936
+mem_heap_extra_B=6400
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=60981878
+mem_heap_B=832256
+mem_heap_extra_B=6816
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=62749912
+mem_heap_B=807136
+mem_heap_extra_B=5560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=64478715
+mem_heap_B=839384
+mem_heap_extra_B=7184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=66210059
+mem_heap_B=837768
+mem_heap_extra_B=7080
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=67820788
+mem_heap_B=818264
+mem_heap_extra_B=6128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=68520154
+mem_heap_B=715672
+mem_heap_extra_B=952
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=68520344
+mem_heap_B=714872
+mem_heap_extra_B=912
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=68520534
+mem_heap_B=714072
+mem_heap_extra_B=872
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=68520724
+mem_heap_B=713272
+mem_heap_extra_B=832
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=68520914
+mem_heap_B=712472
+mem_heap_extra_B=792
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=68521104
+mem_heap_B=711672
+mem_heap_extra_B=752
+mem_stacks_B=0
+heap_tree=detailed
+n10: 711672 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 14080 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 14080 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 2048 0x10AB9F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 2048 0x10AA4B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 2048 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 160 0x10A267: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 160 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 160 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 88 0x10A24B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 88 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 88 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109B0B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109BFB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10A92F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+       n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10A90F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+#-----------
+snapshot=55
+#-----------
+time=68521294
+mem_heap_B=710872
+mem_heap_extra_B=712
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=68521484
+mem_heap_B=710072
+mem_heap_extra_B=672
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=68521674
+mem_heap_B=709272
+mem_heap_extra_B=632
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=68521864
+mem_heap_B=708472
+mem_heap_extra_B=592
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=68522054
+mem_heap_B=707672
+mem_heap_extra_B=552
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=68522244
+mem_heap_B=706872
+mem_heap_extra_B=512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=68522434
+mem_heap_B=706072
+mem_heap_extra_B=472
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=68522624
+mem_heap_B=705272
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=68522814
+mem_heap_B=704472
+mem_heap_extra_B=392
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=68523004
+mem_heap_B=703672
+mem_heap_extra_B=352
+mem_stacks_B=0
+heap_tree=detailed
+n10: 703672 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 622592 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 6080 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 6080 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 2048 0x10AB9F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 2048 0x10AA4B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 2048 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 160 0x10A267: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 160 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 160 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 88 0x10A24B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 88 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 88 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109B0B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109BFB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n1: 0 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10A92F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+       n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10A90F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+#-----------
+snapshot=65
+#-----------
+time=68523194
+mem_heap_B=702872
+mem_heap_extra_B=312
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=68523384
+mem_heap_B=702072
+mem_heap_extra_B=272
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=68523574
+mem_heap_B=701272
+mem_heap_extra_B=232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=68523764
+mem_heap_B=700472
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=68523954
+mem_heap_B=699672
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=68524144
+mem_heap_B=698872
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=68524334
+mem_heap_B=698072
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=68524522
+mem_heap_B=697344
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=68524996
+mem_heap_B=701440
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=68527485
+mem_heap_B=78848
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=detailed
+n10: 78848 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 4096 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+   n2: 4096 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+    n1: 4096 0x4B59317: _IO_file_overflow@@GLIBC_2.17 (fileops.c:744)
+     n1: 4096 0x4B58457: _IO_new_file_xsputn (fileops.c:1243)
+      n1: 4096 0x4B58457: _IO_file_xsputn@@GLIBC_2.17 (fileops.c:1196)
+       n1: 4096 0x4B4346F: outstring_func (vfprintf-internal.c:239)
+        n1: 4096 0x4B4346F: __vfprintf_internal (vfprintf-internal.c:1263)
+         n1: 4096 0x4BD80F7: __printf_chk (printf_chk.c:33)
+          n0: 4096 0x109243: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+    n1: 0 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+     n1: 0 0x4B4C537: fread (iofread.c:38)
+      n1: 0 0x10A92F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+       n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 2048 0x10AB9F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 2048 0x10AA4B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 2048 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n0: 0 0x10917F: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x1099B3: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109B0B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x109BFB: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x10A24B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 0 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x10A267: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >, std::_Select1st<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > > > >::_M_emplace_unique<float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > > >(float&, DDTLibrary::List<DDTLibrary::sllRovingExtension<DDTLibrary::sll<DDTLibrary::listBase<DDTLibrary::sllListElement<Detection, ddtr::malloc_allocator> > > > >&&) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+  n1: 0 0x109B2F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 0 0x10921B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+ n1: 0 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  n1: 0 0x10A90F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+   n0: 0 0x10916B: main (in /lab2/Source_codes/yolo_nms/bin/nms-flag-roving_single_linked_list-glibc)
+#-----------
+snapshot=75
+#-----------
+time=68544218
+mem_heap_B=4096
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=68546126
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

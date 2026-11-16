@@ -1,0 +1,11 @@
+ddt,allocator,nms_peak_B,nms_peak_KiB,dets_storage_B,map_and_other_B,peak_heap_useful_B,peak_heap_extra_B
+orig,glibc,295936,289.0,295488,448,993280,160
+vector,glibc,295992,289.1,295488,504,993336,200
+single_linked_list,glibc,149232,145.7,147840,1392,846576,7560
+double_linked_list,glibc,156672,153.0,155232,1440,854016,15000
+roving_single_linked_list,glibc,149328,145.8,147840,1488,846672,7560
+roving_double_linked_list,glibc,156768,153.1,155232,1536,854112,15000
+single_linked_list_no_sentinel,glibc,148224,144.8,147840,384,845568,7464
+double_linked_list_no_sentinel,glibc,155616,152.0,155232,384,852960,14856
+roving_single_linked_list_no_sentinel,glibc,148320,144.8,147840,480,845664,7464
+roving_double_linked_list_no_sentinel,glibc,155712,152.1,155232,480,853056,14856

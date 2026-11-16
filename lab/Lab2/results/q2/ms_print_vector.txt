@@ -1,0 +1,446 @@
+--------------------------------------------------------------------------------
+Command:            ./bin/nms-vector-glibc input=data/detrac_y5s_640.bin
+Massif arguments:   --threshold=0 --peak-inaccuracy=0 --massif-out-file=/lab2/results/q2/massif_vector.out
+ms_print arguments: --threshold=0 /lab2/results/q2/massif_vector.out
+--------------------------------------------------------------------------------
+
+
+    KB
+970.2^                 #                                                      
+     |                 #                                                      
+     |             ::  #::::: ::::: ::                      ::@:::::  :      :
+     |    @@:::  ::::  #::::: ::::::::              ::     :::@: ::::::::::@::
+     |    @@::::::::: :#::::::::::::::   ::::       ::     :::@: :::: ::: :@::
+     |    @@::::::::: :#:::::::::::::: :@:::::::::::::@:   :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@:::::::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     |    @@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+     | :::@@:::::::::::#::::::::::::::@:@:::::::::::::@::: :::@: :::: ::: :@::
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   281.0
+
+Number of snapshots: 81
+ Detailed snapshots: [5, 7, 22 (peak), 39, 41, 58, 68, 78]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      4,707,323           77,824           77,784            40            0
+  2      7,103,694           78,336           78,296            40            0
+  3     10,099,694           79,360           79,320            40            0
+  4     13,253,640           75,256           75,224            32            0
+  5     17,816,793          861,712          861,560           152            0
+99.98% (861,560B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.25% (622,592B) 0x1092BF: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| 
+->18.84% (162,336B) 0x10B0CF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->18.84% (162,336B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->08.44% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.44% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.44% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.44% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.44% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.24% (2,048B) 0x10D37F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.24% (2,048B) 0x10D22B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.24% (2,048B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.18% (1,520B) 0x10A30F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.18% (1,520B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.04% (360B) 0x10CA7B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >, std::_Select1st<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > > >::_M_emplace_unique<float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >(float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator>&&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.04% (360B) 0x10AA5B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.04% (360B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.00% (0B) 0x10BF37: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.00% (0B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10D10F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|           ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10D0EF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+    ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  6     20,790,925          864,912          864,752           160            0
+  7     23,671,375          869,872          869,688           184            0
+99.98% (869,688B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->71.57% (622,592B) 0x1092BF: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| 
+->19.57% (170,240B) 0x10B0CF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->19.57% (170,240B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->08.36% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.36% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.36% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.36% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.36% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.24% (2,048B) 0x10D37F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.24% (2,048B) 0x10D22B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.24% (2,048B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.17% (1,520B) 0x10A30F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.17% (1,520B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.05% (432B) 0x10CA7B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >, std::_Select1st<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > > >::_M_emplace_unique<float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >(float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator>&&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.05% (432B) 0x10AA5B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.05% (432B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.02% (152B) 0x10BF37: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.02% (152B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10D10F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|           ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10D0EF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+    ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  8     27,729,903          869,304          869,160           144            0
+  9     30,783,350          865,912          865,736           176            0
+ 10     33,874,500          861,752          861,552           200            0
+ 11     36,026,243          863,584          863,376           208            0
+ 12     38,981,827          826,352          826,224           128            0
+ 13     42,760,972          835,352          835,184           168            0
+ 14     44,994,659          837,184          837,008           176            0
+ 15     49,063,692          863,624          863,456           168            0
+ 16     52,047,079          863,928          863,760           168            0
+ 17     55,082,828          900,760          900,536           224            0
+ 18     57,803,102          901,072          900,840           232            0
+ 19     60,522,128          793,376          793,240           136            0
+ 20     64,175,659          736,728          736,624           104            0
+ 21     68,599,324          813,464          813,296           168            0
+ 22     72,834,830          993,536          993,336           200            0
+99.98% (993,336B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->62.66% (622,592B) 0x1092BF: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| 
+->29.74% (295,488B) 0x10B0CF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->29.74% (295,488B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->07.32% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->07.32% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->07.32% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->07.32% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->07.32% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.21% (2,048B) 0x10D37F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.21% (2,048B) 0x10D22B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.21% (2,048B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.05% (504B) 0x10CA7B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >, std::_Select1st<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > > >::_M_emplace_unique<float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >(float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator>&&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.05% (504B) 0x10AA5B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.05% (504B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.00% (0B) 0x10A30F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.00% (0B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.00% (0B) 0x10BF37: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.00% (0B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10D10F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|           ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10D0EF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+    ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 23     75,939,488          923,168          922,960           208            0
+ 24     79,798,449          905,784          905,640           144            0
+ 25     83,286,375          907,096          906,928           168            0
+ 26     86,465,171          908,320          908,144           176            0
+ 27     90,064,254          903,352          903,208           144            0
+ 28     93,333,312          831,304          831,072           232            0
+ 29     95,997,833          839,680          839,520           160            0
+ 30     98,984,380          898,392          898,272           120            0
+ 31    102,350,251          724,920          724,760           160            0
+ 32    106,112,134          911,664          911,488           176            0
+ 33    109,899,997          906,656          906,472           184            0
+ 34    114,230,700          910,464          910,272           192            0
+ 35    118,396,765          913,808          913,616           192            0
+ 36    121,948,756          888,864          888,688           176            0
+ 37    125,887,941          910,704          910,496           208            0
+ 38    129,535,498          912,672          912,472           200            0
+ 39    133,025,104          738,304          738,224            80            0
+99.99% (738,224B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->84.33% (622,592B) 0x1092BF: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| 
+->09.85% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->09.85% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->09.85% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->09.85% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->09.85% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->05.44% (40,128B) 0x10B0CF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->05.44% (40,128B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.28% (2,048B) 0x10D37F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.28% (2,048B) 0x10D22B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.28% (2,048B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.08% (608B) 0x10A30F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.08% (608B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.02% (144B) 0x10CA7B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >, std::_Select1st<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > > >::_M_emplace_unique<float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >(float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator>&&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.02% (144B) 0x10AA5B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.02% (144B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.00% (0B) 0x10BF37: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.00% (0B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10D10F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|           ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10D0EF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+    ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 40    136,650,205          777,168          777,056           112            0
+ 41    140,927,987          794,592          794,456           136            0
+99.98% (794,456B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->78.35% (622,592B) 0x1092BF: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| 
+->11.78% (93,632B) 0x10B0CF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->11.78% (93,632B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->09.15% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->09.15% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->09.15% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->09.15% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->09.15% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.40% (3,192B) 0x10A30F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.40% (3,192B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.26% (2,048B) 0x10D37F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.26% (2,048B) 0x10D22B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.26% (2,048B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.04% (288B) 0x10CA7B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >, std::_Select1st<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > > >::_M_emplace_unique<float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >(float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator>&&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.04% (288B) 0x10AA5B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.04% (288B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.00% (0B) 0x10BF37: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.00% (0B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10D10F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|           ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10D0EF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+    ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 42    143,790,940          808,416          808,288           128            0
+ 43    148,754,872          824,992          824,856           136            0
+ 44    153,678,350          802,288          802,128           160            0
+ 45    157,002,025          808,112          807,984           128            0
+ 46    161,938,285          789,072          788,992            80            0
+ 47    165,905,041          781,776          781,696            80            0
+ 48    169,989,364          788,928          788,840            88            0
+ 49    173,589,070          787,712          787,624            88            0
+ 50    176,270,794          788,160          788,080            80            0
+ 51    179,251,442          697,456          697,416            40            0
+ 52    182,329,068          777,216          777,136            80            0
+ 53    184,633,140          781,936          781,848            88            0
+ 54    187,056,688          787,856          787,776            80            0
+ 55    189,760,640          854,128          854,048            80            0
+ 56    192,538,109          856,864          856,784            80            0
+ 57    194,689,959          697,936          697,872            64            0
+ 58    196,919,403          766,816          766,632           184            0
+99.98% (766,632B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->81.19% (622,592B) 0x1092BF: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| 
+->09.48% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->09.48% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->09.48% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->09.48% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->09.48% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->08.80% (67,488B) 0x10B0CF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->08.80% (67,488B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.27% (2,048B) 0x10D37F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.27% (2,048B) 0x10D22B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.27% (2,048B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.18% (1,368B) 0x10A30F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.18% (1,368B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.06% (432B) 0x10CA7B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >, std::_Select1st<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > > >::_M_emplace_unique<float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >(float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator>&&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.06% (432B) 0x10AA5B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.06% (432B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.00% (0B) 0x10BF37: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.00% (0B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10D10F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|           ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10D0EF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+    ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 59    199,075,170          743,960          743,840           120            0
+ 60    201,957,705          784,768          784,656           112            0
+ 61    204,400,891          697,456          697,416            40            0
+ 62    206,662,445          697,456          697,416            40            0
+ 63    209,203,411          738,304          738,224            80            0
+ 64    211,453,581          729,344          729,256            88            0
+ 65    217,849,538          884,576          884,440           136            0
+ 66    222,789,757          902,640          902,440           200            0
+ 67    227,234,109          912,272          912,096           176            0
+ 68    232,509,275          906,352          906,168           184            0
+99.98% (906,168B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->68.69% (622,592B) 0x1092BF: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| 
+->22.91% (207,632B) 0x10B0CF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->22.91% (207,632B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->08.02% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.02% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.02% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.02% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.02% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.23% (2,048B) 0x10D37F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.23% (2,048B) 0x10D22B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.23% (2,048B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.08% (760B) 0x10A30F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.08% (760B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.05% (432B) 0x10CA7B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >, std::_Select1st<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > > >::_M_emplace_unique<float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >(float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator>&&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.05% (432B) 0x10AA5B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.05% (432B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.00% (0B) 0x10BF37: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.00% (0B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10D10F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|           ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10D0EF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+    ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 69    237,202,817          903,824          903,664           160            0
+ 70    241,813,891          906,000          905,872           128            0
+ 71    245,887,680          905,248          905,112           136            0
+ 72    251,686,756          900,992          900,856           136            0
+ 73    257,487,821          875,168          875,016           152            0
+ 74    262,942,046          894,752          894,624           128            0
+ 75    267,904,028          893,136          893,032           104            0
+ 76    273,664,642          876,928          876,760           168            0
+ 77    279,313,740          874,384          874,256           128            0
+ 78    284,920,402          879,456          879,352           104            0
+99.99% (879,352B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->70.79% (622,592B) 0x1092BF: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| 
+->20.46% (179,968B) 0x10B0CF: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->20.46% (179,968B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->08.27% (72,704B) 0x491EB07: ??? (in /usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30)
+| ->08.27% (72,704B) 0x4005623: call_init (dl-init.c:70)
+|   ->08.27% (72,704B) 0x4005623: call_init (dl-init.c:26)
+|     ->08.27% (72,704B) 0x400572B: _dl_init (dl-init.c:117)
+|       ->08.27% (72,704B) 0x4017CC7: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+|         
+->00.23% (2,048B) 0x10D37F: void std::vector<float*, std::allocator<float*> >::_M_realloc_insert<float* const&>(__gnu_cxx::__normal_iterator<float**, std::vector<float*, std::allocator<float*> > >, float* const&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.23% (2,048B) 0x10D22B: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.23% (2,048B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.21% (1,824B) 0x10A30F: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.21% (1,824B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.02% (216B) 0x10CA7B: std::pair<std::_Rb_tree_iterator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, bool> std::_Rb_tree<float, std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >, std::_Select1st<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > >, std::less<float>, std::allocator<std::pair<float const, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> > > >::_M_emplace_unique<float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator> >(float&, DDTLibrary::Vector<Detection, ddtr::malloc_allocator>&&) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.02% (216B) 0x10AA5B: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   ->00.02% (216B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|     
+->00.00% (0B) 0x10BF37: nms(std::vector<Detection, std::allocator<Detection> >&, float*, float, float) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+| ->00.00% (0B) 0x10935B: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|   
+->00.00% (0B) 0x4B4B51B: _IO_file_doallocate (filedoalloc.c:101)
+| ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:347)
+|   ->00.00% (0B) 0x4B59F4F: _IO_doallocbuf (genops.c:342)
+|     ->00.00% (0B) 0x4B58193: _IO_file_xsgetn (fileops.c:1287)
+|       ->00.00% (0B) 0x4B4C537: fread (iofread.c:38)
+|         ->00.00% (0B) 0x10D10F: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|           ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+|             
+->00.00% (0B) 0x4B4BF57: __fopen_internal (iofopen.c:65)
+  ->00.00% (0B) 0x10D0EF: load(char const*) (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+    ->00.00% (0B) 0x1092AB: main (in /lab2/Source_codes/yolo_nms/bin/nms-vector-glibc)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 79    289,794,247          876,304          876,152           152            0
+ 80    294,695,946          897,744          897,584           160            0
