@@ -14,4 +14,4 @@ these counts do not depend on the machine). `peak_malloc_bytes` is the `malloc_b
 All 36 DDT x allocator binaries print `validate: OK`; `test/alloc_stress.cpp` (random
 malloc/free with pattern checks) passes for all four allocators.
 
-Time, Massif-equivalent footprint and LLC misses for the report: on the board.
+Time and LLC misses (AUP-ZU3): `../board/q3/summary.csv` (glibc rows: `../board/q2/`).

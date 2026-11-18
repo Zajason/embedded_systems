@@ -109,22 +109,19 @@ This works the same on macOS and Windows.
 4. Eject it properly (macOS: eject in Finder; Windows: *Safely Remove*), put it back in the board.
 
 ### 3b. On the board
-Power on, log in over UART (section 2), then:
-```bash
-lsblk -f
+Power on, log in over UART (section 2). On the PYNQ image the FAT partition is already mounted
+at `/boot` (`lsblk` is not installed; check with `mount | grep mmcblk`):
 ```
-Find the `vfat` partition (usually `mmcblk0p1`) and look at its MOUNTPOINT column.
-- If it has a mountpoint (e.g. `/boot`), use that path below instead of `/mnt/sd`.
-- If it has none, mount it (password `xilinx` if `sudo` asks):
-  ```bash
-  sudo mkdir -p /mnt/sd
-  sudo mount /dev/mmcblk0p1 /mnt/sd
-  ```
+/dev/mmcblk0p2 on / type ext4 (rw,relatime)
+/dev/mmcblk0p1 on /boot type vfat (...)
+```
+If the `vfat` line is missing, mount it yourself and use `/mnt/sd` instead of `/boot` below
+(password `xilinx` if `sudo` asks): `sudo mkdir -p /mnt/sd && sudo mount /dev/mmcblk0p1 /mnt/sd`.
 
 Then unpack into `/home/xilinx/lab2`:
 ```bash
 mkdir -p ~/lab2
-tar xzf /mnt/sd/lab2_board.tar.gz -C ~/lab2
+tar xzf /boot/lab2_board.tar.gz -C ~/lab2
 cd ~/lab2/Source_codes/yolo_nms
 ls                # build.sh  board_measure.sh  postprocess.cpp  data/  allocators/ ...
 g++ --version     # the compiler is there
@@ -267,8 +264,9 @@ the PC, the numbers do not depend on the machine):
 ```bash
 cd ~/lab2/Source_codes/yolo_nms
 tar czf board_results.tar.gz board_results measure*.log
-sudo cp board_results.tar.gz /mnt/sd/      # or the FAT mountpoint you found in 3b
+sudo cp board_results.tar.gz /boot/        # the FAT partition (see 3b); sudo password: xilinx
 sync
+ls -l /boot/board_results.tar.gz
 ```
 
 ### 7b. Backup over the serial console (no SD card needed)
@@ -297,7 +295,8 @@ copy E:\board_results.tar.gz .          # E: = the FAT drive
 tar xzf board_results.tar.gz
 ```
 
-You then have `Lab2/results/board/board_results/q1..q4/summary.csv`. Together with the
+You then have `board_results/q1..q4/summary.csv` (in this repository they were moved up to
+`Lab2/results/board/q1..q4/`). Together with the
 footprints already in `results/q1..q4/`, that is everything needed for the tables and the
 Pareto plots (time = `mean_ms`, variance = `var_ms2`, LLC misses = `l2d_refill_runs1`).
 
@@ -308,7 +307,6 @@ Pareto plots (time = `mean_ms`, variance = `var_ms2`, LLC misses = `l2d_refill_r
 On the board, **after** 7a:
 ```bash
 rm -rf ~/lab2
-sudo umount /mnt/sd 2>/dev/null
 sudo poweroff
 ```
 Wait until the console stops printing, then switch the board off.
@@ -327,6 +325,8 @@ card's FAT drive, then eject it properly and put it back in the board.
 | macOS: `Cannot open line` / `screen is terminating` | an old `screen` still holds the port: `screen -ls`, then `screen -X -S <id> quit` |
 | Windows: `Access denied` on COMx | another program (or a second PuTTY) has the port open |
 | `ZynqMP>` prompt | type `boot` |
+| stops at `ZynqMP>` with `no mmc device at slot 1` or `No partition table - mmc 0` | U-Boot cannot read the SD card. Unplug the power for ~10 s and reseat the card with the power off. If it persists, try another SD card (ours read fine on a PC but not in the board) |
+| `screen` says `[screen is terminating]` | an older `screen` still holds the port: `screen -ls`, then `screen -r <id>` to get back into it |
 | `./build.sh: Permission denied` | the executable bit was lost: `chmod +x build.sh board_measure.sh` (or use the tar as in section 1) |
 | `perf not found` after installing | `source ~/.profile` |
 | perf: `Permission error` / `perf_event_paranoid` | `sudo sh -c 'echo -1 > /proc/sys/kernel/perf_event_paranoid'` |

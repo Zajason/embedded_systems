@@ -15,4 +15,4 @@ roving adds 96 B.
 `peak_heap_extra_B` is malloc's own header/alignment overhead, which Massif does not count
 as useful heap: one 16 B header per list node shows up here (7.5 KB SLL, 15 KB DLL).
 
-Time and LLC misses: to be measured on the board.
+Time and LLC misses (AUP-ZU3): `../board/q2/summary.csv`.

@@ -1,0 +1,4 @@
+Wed Oct 20 11:50:20 PM UTC 2094
+Linux pynq 6.6.10-xilinx-v2024.1-gd764a4a53410 #1 SMP Sat Apr 27 05:22:24 UTC 2024 aarch64 aarch64 aarch64 GNU/Linux
+g++ (Ubuntu 11.2.0-19ubuntu1) 11.2.0
+perf version 5.15.30

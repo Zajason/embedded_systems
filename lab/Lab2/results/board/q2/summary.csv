@@ -1,0 +1,10 @@
+binary,ddt,allocator,rep1_ms,rep2_ms,rep3_ms,mean_ms,var_ms2,l2d_refill_runs1,l2d_refill_runs0
+nms-vector-glibc,vector,glibc,357.3116,357.3052,357.2104,357.2757,0.003212,348472,161264
+nms-single_linked_list-glibc,single_linked_list,glibc,103.8446,103.9253,104.2999,104.0233,0.059023,347242,161670
+nms-double_linked_list-glibc,double_linked_list,glibc,87.7129,87.6833,87.9221,87.7728,0.016944,346333,161382
+nms-roving_single_linked_list-glibc,roving_single_linked_list,glibc,104.3900,104.1444,104.2632,104.2659,0.015085,347087,161178
+nms-roving_double_linked_list-glibc,roving_double_linked_list,glibc,87.8849,88.0686,88.0469,88.0001,0.010077,347007,160567
+nms-single_linked_list_no_sentinel-glibc,single_linked_list_no_sentinel,glibc,103.7662,103.8054,103.6193,103.7303,0.009625,346829,161709
+nms-double_linked_list_no_sentinel-glibc,double_linked_list_no_sentinel,glibc,87.3532,86.9897,87.1878,87.1769,0.033122,346748,161187
+nms-roving_single_linked_list_no_sentinel-glibc,roving_single_linked_list_no_sentinel,glibc,102.9052,102.8039,102.8599,102.8563,0.002575,346839,161297
+nms-roving_double_linked_list_no_sentinel-glibc,roving_double_linked_list_no_sentinel,glibc,86.3327,86.3298,86.3078,86.3234,0.000185,346802,161023

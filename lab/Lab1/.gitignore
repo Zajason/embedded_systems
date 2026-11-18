@@ -2,3 +2,5 @@
 test/host_test
 test/*.dSYM/
 __pycache__/
+lab1_submission/
+lab1_submission.zip

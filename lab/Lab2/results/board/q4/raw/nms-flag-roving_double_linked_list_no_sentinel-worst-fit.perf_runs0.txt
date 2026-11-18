@@ -1,0 +1,3 @@
+# started on Thu Oct 21 00:15:34 2094
+
+160850,,l2d_cache_refill:u,0.08%,41441257,100.00,,

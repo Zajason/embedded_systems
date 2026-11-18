@@ -6,4 +6,4 @@ All 45 DDT x allocator builds with -DNMS_FLAG -DVALIDATE print `validate: OK`.
 
 The flags vector adds one byte per box (+ a header), so the footprints are a few hundred
 bytes above Q2/Q3; dets itself never shrinks now, but its peak was the full frame anyway.
-Time and l2d_cache_refill: on the board, `./board_measure.sh q4`.
+Time and l2d_cache_refill (AUP-ZU3): `../board/q4/summary.csv`.

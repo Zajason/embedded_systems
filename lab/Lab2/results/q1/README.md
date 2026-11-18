@@ -28,9 +28,7 @@ can save on.
 
 The frames themselves are loaded with `mmap` in `main.cpp`, so they are not in the heap.
 
-## Execution time
+## Execution time (board)
 
-To be measured **on the board** (`./bin/nms-orig input=data/detrac_y5s_640.bin runs=20`,
-average of the 20 `ms=` lines). For reference only, the same binary on the Mac (M-series,
-in Docker) prints ≈ 21 ms per run after warm-up, so expect the board's Cortex-A53 to be
-several times slower.
+347.54 ms per pass over all frames (3 x `runs=20`, variance 0.0098 ms^2), measured on the
+AUP-ZU3: `../board/q1/summary.csv`.
